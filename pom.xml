@@ -24,7 +24,6 @@
       <scm>
         <url>https://github.com/SaiprasadKrishnamurthy/cukestyle-maven-plugin</url>
       </scm>
-
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <serenity.version>1.0.47</serenity.version>
@@ -33,8 +32,6 @@
         <webdriver.driver>firefox</webdriver.driver>
         <surefire.rerunFailingTestsCount>0</surefire.rerunFailingTestsCount>
     </properties>
-
-
     <dependencies>
         <dependency>
             <groupId>org.codehaus.jackson</groupId>
