@@ -1,0 +1,22 @@
+[
+  {
+    "ruleId": "UNUSED_STEP_DEFS",
+    "ruleDescription": "Find the unused step definitions",
+    "ruleSeverity": "HIGH",
+    "maxThreshold": 0
+  },
+  {
+    "ruleId": "CONJUNCTIONS",
+    "ruleDescription": "Number of conjunctions 'and' in a a step",
+    "ruleSeverity": "HIGH",
+    "minThreshold": 0,
+    "maxThreshold": 5
+  },
+  {
+    "ruleId": "EXAMPLES_LIMIT",
+    "ruleDescription": "Number of examples in a data table",
+    "ruleSeverity": "HIGH",
+    "minThreshold": 0,
+    "maxThreshold": 10
+  }
+]

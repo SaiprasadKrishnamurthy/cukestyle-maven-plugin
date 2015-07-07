@@ -1,0 +1,16 @@
+Feature: Display helpful links in a non intrusive fashion
+
+  Background:
+    Given I am on the homepage page
+
+  Scenario Outline: Click on homepage links
+    When I click a third party footer <link> element
+    Then I am taken to the third party page
+
+    Scenarios:
+    | link           |
+    | "footer-foo-for-business" |
+    | "footer-affiliate-program"  |
+    | "footer-hrg-news"            |
+    | "footer-foo-careers"       |
+    | "footer-foo-ie"            |

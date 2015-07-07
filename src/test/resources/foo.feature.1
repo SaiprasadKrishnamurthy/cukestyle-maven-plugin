@@ -1,0 +1,36 @@
+Feature: Display helpful links in a non intrusive fashion
+
+  Background:
+    Given I am on the homepage page
+
+  Scenario Outline: Click on homepage links
+    When I click a footer "<link>" element
+    Then I am taken to the correct <page> page
+
+  Scenarios:
+    | link                         | page                     |
+    | "footer-about-us"            | "About us"               |
+    | "footer-mobile-site"         | "Shiny mobile site       |
+
+      @completed
+      Scenario: Add "immediately available for collection" product to the trolley
+        Given I am on product details page of some "immediately available for collection" product
+        When I choose delivery option of "collection from local store"
+        And I buy or reserve a product
+        And I go to trolley lister page
+        Then I see the message "collect immediately" on trolley lister page
+
+      @completed
+      Scenario: Add "collection unavailable" product to the trolley
+        Given I am on product details page of some "collection unavailable" product
+        When I buy or reserve a product
+        And I go to trolley lister page
+        Then I see the message "collection not available" on trolley lister page
+
+
+      @completed
+      Scenario: Add "out of stock" product to the trolley
+        Given I am on product details page of some "out of stock" product
+        When I buy or reserve a product
+        And I go to trolley lister page
+        Then I see the message "out of stock" on trolley lister page

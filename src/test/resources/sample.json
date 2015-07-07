@@ -1,0 +1,99 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "line": 4,
+            "name": "I am on the homepage page",
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "examples": [
+          {
+            "line": 10,
+            "name": "",
+            "description": "",
+            "id": "display-helpful-links-in-a-non-intrusive-fashion;click-on-homepage-links;",
+            "rows": [
+              {
+                "cells": [
+                  "link"
+                ],
+                "line": 11,
+                "id": "display-helpful-links-in-a-non-intrusive-fashion;click-on-homepage-links;;1"
+              },
+              {
+                "cells": [
+                  "\"footer-foo-for-business\""
+                ],
+                "line": 12,
+                "id": "display-helpful-links-in-a-non-intrusive-fashion;click-on-homepage-links;;2"
+              },
+              {
+                "cells": [
+                  "\"footer-affiliate-program\""
+                ],
+                "line": 13,
+                "id": "display-helpful-links-in-a-non-intrusive-fashion;click-on-homepage-links;;3"
+              },
+              {
+                "cells": [
+                  "\"footer-hrg-news\""
+                ],
+                "line": 14,
+                "id": "display-helpful-links-in-a-non-intrusive-fashion;click-on-homepage-links;;4"
+              },
+              {
+                "cells": [
+                  "\"footer-foo-careers\""
+                ],
+                "line": 15,
+                "id": "display-helpful-links-in-a-non-intrusive-fashion;click-on-homepage-links;;5"
+              },
+              {
+                "cells": [
+                  "\"footer-foo-ie\""
+                ],
+                "line": 16,
+                "id": "display-helpful-links-in-a-non-intrusive-fashion;click-on-homepage-links;;6"
+              }
+            ],
+            "keyword": "Scenarios"
+          }
+        ],
+        "line": 6,
+        "name": "Click on homepage links",
+        "description": "",
+        "id": "display-helpful-links-in-a-non-intrusive-fashion;click-on-homepage-links",
+        "type": "scenario_outline",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "line": 7,
+            "name": "I click a third party footer \u003clink\u003e element",
+            "keyword": "When "
+          },
+          {
+            "line": 8,
+            "name": "I am taken to the third party page",
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Display helpful links in a non intrusive fashion",
+    "description": "",
+    "id": "display-helpful-links-in-a-non-intrusive-fashion",
+    "keyword": "Feature",
+    "uri": ""
+  }
+]

@@ -1,0 +1,26 @@
+Feature: Display helpful links in a non intrusive fashion
+
+  Background:
+    Given I am on the homepage page
+
+      @completed
+      Scenario: Add 2 numbers
+        Given I have a calculator in hand
+        When I input two numbers 5 and 5
+        And I perform add
+        And I keep watching the sky
+        Then I see 10 as the result
+
+        Scenario: Subtract 2 numbers
+         Given I have a calculator in hand
+         When I input two numbers 5 and 5
+         And I perform subtract
+         And I keep watching the sky
+         Then I see 0 as the result
+
+          Scenario: Multiply 2 numbers
+                  Given I have a calculator in hand
+                  When I input two numbers 5 and 5
+                  And I perform multiply
+                  And I keep watching the sky
+                  Then I see 25 as the result

@@ -1,0 +1,92 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "",
+        "description": "",
+        "type": "background",
+        "keyword": "Background",
+        "steps": [
+          {
+            "line": 4,
+            "name": "I am on the homepage page",
+            "keyword": "Given "
+          }
+        ]
+      },
+      {
+        "line": 7,
+        "name": "Add 2 numbers",
+        "description": "",
+        "id": "display-helpful-links-in-a-non-intrusive-fashion;add-2-numbers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "line": 8,
+            "name": "I have a calculator in hand",
+            "keyword": "Given "
+          },
+          {
+            "line": 9,
+            "name": "I input two numbers 5 and 5",
+            "keyword": "When "
+          },
+          {
+            "line": 10,
+            "name": "I perform add",
+            "keyword": "And "
+          },
+          {
+            "line": 11,
+            "name": "I see 10 as the result",
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 6,
+            "name": "@completed"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "Subtract 2 numbers",
+        "description": "",
+        "id": "display-helpful-links-in-a-non-intrusive-fashion;subtract-2-numbers",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "line": 14,
+            "name": "I have a calculator in hand",
+            "keyword": "Given "
+          },
+          {
+            "line": 15,
+            "name": "I input two numbers 5 and 5",
+            "keyword": "When "
+          },
+          {
+            "line": 16,
+            "name": "I perform subtract",
+            "keyword": "And "
+          },
+          {
+            "line": 17,
+            "name": "I see 0 as the result",
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Display helpful links in a non intrusive fashion",
+    "description": "",
+    "id": "display-helpful-links-in-a-non-intrusive-fashion",
+    "keyword": "Feature",
+    "uri": ""
+  }
+]
