@@ -4,10 +4,26 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.sai.tools</groupId>
+    <groupId>com.github.saiprasadkrishnamurthy</groupId>
     <artifactId>cuke-style-maven-plugin</artifactId>
     <version>1.0</version>
     <packaging>maven-plugin</packaging>
+
+    <name>Cukestyle plugin</name>
+    <description>Plugin that checks the compliance of BDD feature files (cucumber java) against configurable list of rules.</description>
+    <url>https://github.com/SaiprasadKrishnamurthy/cukestyle-maven-plugin</url>
+ 
+      <licenses>
+        <license>
+          <name>Apache License, Version 2.0</name>
+          <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+          <distribution>repo</distribution>
+        </license>
+      </licenses>
+     
+      <scm>
+        <url>https://github.com/SaiprasadKrishnamurthy/cukestyle-maven-plugin</url>
+      </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -68,21 +84,21 @@
 		    <version>2.5.4</version>
 		</dependency>
         <dependency>
-    <groupId>org.apache.maven</groupId>
-    <artifactId>maven-plugin-api</artifactId>
-    <version>3.3.3</version>
-</dependency>
-<dependency>
-    <groupId>commons-io</groupId>
-    <artifactId>commons-io</artifactId>
-    <version>2.4</version>
-</dependency>
-<dependency>
-    <groupId>org.apache.maven</groupId>
-    <artifactId>maven-project</artifactId>
-    <version>3.0-alpha-2</version>
-</dependency>
-<dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-plugin-api</artifactId>
+            <version>3.3.3</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-io</groupId>
+            <artifactId>commons-io</artifactId>
+            <version>2.4</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.maven</groupId>
+            <artifactId>maven-project</artifactId>
+            <version>3.0-alpha-2</version>
+        </dependency>
+        <dependency>
             <groupId>net.serenity-bdd</groupId>
             <artifactId>serenity-cucumber</artifactId>
             <version>${serenity.cucumber.version}</version>
@@ -92,12 +108,7 @@
     <artifactId>reflections</artifactId>
     <version>0.9.10</version>
 </dependency>
-
-
-
-
-
-    </dependencies>
+  </dependencies>
      <build>
         <plugins>
             <plugin>
