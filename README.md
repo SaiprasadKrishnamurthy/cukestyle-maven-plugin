@@ -3,7 +3,7 @@
 This is a simple extensible cucumber feature files rules checker maven plugin. 
 This currently only supports Cucumber (Java) as a Gherkin implementation.
 The rules are defined in a json file which is fed into the plugin for checking.
-More rules can be easily added in the future without modifying the existing ones.
+More rules can be added in the future without modifying the existing rule implementations.
 
 ## A sample rules json file would typically look like this. ##
 
@@ -37,10 +37,10 @@ The basic usage is to hook this plugin during the prepare-package phase (before 
 ### To hook this plugin into the pom of the functional tests, the following must be done. ###
    
    
-      <plugin>
-                <groupId>org.sai.tools</groupId>
-                <artifactId>cuke-style-maven-plugin</artifactId>
-                <version>1.0-SNAPSHOT</version>
+            <plugin>
+                 <groupId>com.github.saiprasadkrishnamurthy</groupId>
+                 <artifactId>cuke-style-maven-plugin</artifactId>
+                 <version>1.0</version>
                 <configuration>
                     <rulesFilePath>rules.json</rulesFilePath>
                     <baseStepDefsPackage>features.steps</baseStepDefsPackage>

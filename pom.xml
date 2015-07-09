@@ -9,6 +9,13 @@
     <version>1.0</version>
     <packaging>maven-plugin</packaging>
 
+    <parent>
+    <groupId>org.sonatype.oss</groupId>
+    <artifactId>oss-parent</artifactId>
+    <version>9</version>
+</parent>
+
+
     <name>Cukestyle plugin</name>
     <description>Plugin that checks the compliance of BDD feature files (cucumber java) against configurable list of rules.</description>
     <url>https://github.com/SaiprasadKrishnamurthy/cukestyle-maven-plugin</url>
@@ -106,7 +113,22 @@
     <version>0.9.10</version>
 </dependency>
   </dependencies>
+
      <build>
+        <pluginManagement>
+    <plugins>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-gpg-plugin</artifactId>
+            <version>1.5</version>
+        </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-release-plugin</artifactId>
+            <version>2.4.2</version>
+        </plugin>
+    </plugins>
+</pluginManagement>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
